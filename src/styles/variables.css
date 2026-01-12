@@ -1,0 +1,16 @@
+/* 
+ * Variables CSS (Design System)
+ * =============================
+ * Aquí defines todas las variables CSS personalizadas (custom properties)
+ * que usarás en todo el proyecto para mantener consistencia
+ * 
+ * Ejemplos de variables a definir:
+ * :root {
+ *     --color-primary: #...;
+ *     --color-secondary: #...;
+ *     --font-primary: ...;
+ *     --spacing-sm: ...;
+ *     --border-radius: ...;
+ *     etc.
+ * }
+ */

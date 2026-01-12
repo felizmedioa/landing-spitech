@@ -1,0 +1,82 @@
+/* 
+ * Estilos Principales
+ * ===================
+ * Aquí van los estilos generales de tu landing page
+ * 
+ * Incluye:
+ * - Estilos del body
+ * - Contenedores principales
+ * - Layout general (grid, flexbox)
+ * - Estilos de secciones específicas (hero, about, contact, etc.)
+ * - Tipografía base
+ */
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: gray;
+}
+
+/* Hero - Anuncio publicitario con scroll infinito */
+.hero {
+    background-color: #f7c41e;
+    height: 4rem;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Impact';
+    font-weight: 600;
+    padding-bottom: 0.2rem;
+}
+
+.hero__scroll {
+    display: flex;
+    position: absolute;
+    white-space: nowrap;
+    animation: scroll-left 10s linear infinite;
+}
+
+.hero__content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
+    font-size: 2rem;
+    height: 4.5rem;
+}
+
+.punto {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+}
+
+/* Animación de scroll infinito */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-25%);
+    }
+}
+
+
+dialog {
+    font-family: 'Roboto', sans-serif;
+    width: 28rem;
+    height: 90%
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+body:has(dialog[open]) {
+    overflow: hidden;
+}
+
+#promo-cubo,
+#promo-cantidad {
+    display: none;
+}

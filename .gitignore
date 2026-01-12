@@ -1,0 +1,32 @@
+# Dependencias
+node_modules/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Archivos temporales
+*.tmp
+.cache/
+
+# Variables de entorno (NO subir al repositorio)
+.env
+.env.local
+.env.production
+
+# Build (por si en el futuro agregas un build step)
+dist/
+build/
+
+# Archivos de OS
+*.swp
+*~

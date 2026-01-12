@@ -1,0 +1,14 @@
+{
+    "name": "spitech-landing",
+    "version": "1.0.0",
+    "description": "Landing page moderna con vanilla JavaScript",
+    "scripts": {
+        "dev": "echo 'Aquí puedes agregar un servidor de desarrollo si lo necesitas'"
+    },
+    "keywords": [
+        "landing-page",
+        "vanilla-js"
+    ],
+    "author": "",
+    "license": "MIT"
+}

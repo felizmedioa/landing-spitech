@@ -1,0 +1,18 @@
+/* 
+ * Responsive Design (Media Queries)
+ * =================================
+ * Aquí van todos los media queries para hacer tu landing page responsive
+ * 
+ * Breakpoints comunes:
+ * @media (max-width: 1200px) { } // Desktop grande
+ * @media (max-width: 992px)  { } // Desktop
+ * @media (max-width: 768px)  { } // Tablet
+ * @media (max-width: 576px)  { } // Mobile
+ * 
+ * Incluye ajustes de:
+ * - Layouts (grid -> stack)
+ * - Tamaños de fuente
+ * - Espaciado
+ * - Ocultar/mostrar elementos
+ * - Navegación móvil (hamburger menu)
+ */
