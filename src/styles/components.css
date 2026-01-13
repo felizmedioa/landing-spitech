@@ -60,11 +60,3 @@
 .btn-comprar-text-sub {
     color: rgba(255, 255, 255, 0.9);
 }
-
-.input-data {
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    margin-bottom: 15px;
-}

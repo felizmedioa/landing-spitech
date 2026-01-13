@@ -65,7 +65,7 @@ section {
     /* 2. Define el grosor de la línea */
     background-color: #ddd;
     /* 3. El color de la línea (gris claro) */
-    margin: 1rem;
+    margin: 1.5rem;
     /* 4. Espacio arriba y abajo para que no pegue con el texto */
 }
 
@@ -75,13 +75,17 @@ section {
 }
 
 .btn-item {
-    border: 3px solid rgb(251, 146, 60);
+    border: 3px solid rgb(232, 232, 235);
     border-radius: 8px;
     padding: 8px;
     width: 100%;
     margin-bottom: 8px;
     background-color: rgb(255, 255, 255);
     cursor: pointer;
+}
+
+.btn-item:has(input[type="radio"]:checked) {
+    border: 3px solid rgb(251, 146, 60);
 }
 
 .btn-item label {
@@ -197,7 +201,8 @@ section {
 
 .cost {
     padding: 16px 24px;
-    margin: 0 auto;
+    margin: 1rem auto;
+    margin-bottom: 0px;
     border-radius: 8px;
     background-color: color-mix(in xyz-d65, rgb(250, 250, 250) 85%, black);
     border: 2px solid rgb(253, 253, 253);
@@ -225,6 +230,7 @@ section {
 
 .total-cost .hr-2 {
     height: 1.5px;
+    margin: 0.7rem;
 }
 
 .total-cost p {
@@ -254,17 +260,134 @@ section {
     font-size: 16px;
     opacity: 0.75;
     font-weight: 500;
+    margin-bottom: 0px;
 }
 
 /*Botones de envio*/
 
 .btn-envio {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
     width: 100%;
+    border: 1px solid rgb(232, 232, 235);
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.8rem 0.52rem;
 }
 
 .btn-envio label {
+    font-family: 'Public Sans', sans-serif;
     width: 100%;
+    display: flex;
+    cursor: pointer;
+    gap: 0.5rem;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.envio-info {
+    flex: 1;
+    text-align: left;
+}
+
+.envio-gratis .info-envio {
+    flex: 1;
+}
+
+.info-envio-title,
+.info-envio-subtitle,
+.desc-envio {
+    margin: 0px;
+    text-align: left;
+}
+
+.info-envio-title {
+    font-weight: 600;
+    font-size: 14px;
+    flex: 1;
+}
+
+.info-envio-subtitle {
+    margin: auto 0;
+    padding: 0.1rem;
+    font-size: 12px;
+    opacity: 0.75;
+}
+
+.desc-envio {
+    opacity: 0.75;
+    font-size: 14px;
+}
+
+/*Sección Datos Personales*/
+
+.data-client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.data-client h3 {
+    color: red;
+    margin: 0.5rem auto;
+}
+
+/*Cabecera de los campos*/
+.data-client label {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-size: 0.8125em;
+    color: rgb(0, 0, 0);
+}
+
+/*Campo obligatorio: asterisco rojo*/
+.data-client label span {
+    color: red;
+    margin-left: 0.2rem;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+/*Input de los campos*/
+.data-client-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.25rem;
+}
+
+.input-data {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 3px;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.input-data:focus {
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 3px;
+    border: 1px solid rgb(37, 99, 235);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+/*Terminos y condiciones*/
+
+.terms {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0.5rem;
+    margin: 0rem 1rem 0rem 1rem;
+    font-size: 0.8125rem;
 }

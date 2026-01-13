@@ -153,95 +153,105 @@
                                 <button class="btn-envio" type="button">
                                     <label for="envio-gratis">
                                         <input type="radio" name="tipo-envio" id="envio-gratis" checked>
+                                        <div class="envio-info">
+                                            <span>
+                                                <p class="info-envio-title">Envío Gratis</p>
+                                            </span>
+                                        </div>
                                         <span>
-                                            <p class="text-envio">Envío Gratis</p>
                                             <p class="desc-envio">Gratis</p>
                                         </span>
+
                                     </label>
                                 </button>
                                 <button class="btn-envio" type="button">
                                     <label for="envio-express">
                                         <input type="radio" name="tipo-envio" id="envio-express">
-                                        <span>
-                                            <p class="text-envio">Envío Express</p>
-                                            <p class="info-envio">Recibe en menos de 3 horas</p>
-                                        </span>
+                                        <div class="envio-info">
+                                            <span>
+                                                <p class="info-envio-title">Envío Express</p>
+                                                <p class="info-envio-subtitle">Recibe en menos de 3 horas</p>
+                                            </span>
+                                        </div>
                                         <span>
                                             <p class="desc-envio">S/.20.00</p>
                                         </span>
+
                                     </label>
                                 </button>
                             </div>
                             <div class="data-client">
                                 <h3>DATOS PARA EL ENVIO</h3>
-                                <ul>
-                                    <li>
-                                        <label for="name">Nombre Y Apellido <span style="color: red;">*</span></label>
-                                        <input class="input-data" type="text" id="name" name="name"
-                                            placeholder="Ej: Luis Jose" required>
-                                    </li>
-                                    <li>
-                                        <label for="dni">DNI <span style="color: red;">*</span></label>
-                                        <input class="input-data" type="text" id="dni" name="dni"
-                                            placeholder="Ej: 78455698" required>
-                                    </li>
-                                    <li>
-                                        <label for="telefono">WhatsApp <span style="color: red;">*</span></label>
-                                        <input class="input-data" type="text" id="telefono" name="telefono"
-                                            placeholder="+51 987259485" required>
-                                    </li>
-                                    <li>
-                                        <label for="departamento">Departamento <span
-                                                style="color: red;">*</span></label>
-                                        <select class="input-data" id="departamento" name="departamento" required>
-                                            <option value="" disabled selected>Ej: Tumbes</option>
-                                            <option value="amazonas">Amazonas</option>
-                                            <option value="ancash">Áncash</option>
-                                            <option value="apurimac">Apurímac</option>
-                                            <option value="arequipa">Arequipa</option>
-                                            <option value="ayacucho">Ayacucho</option>
-                                            <option value="cajamarca">Cajamarca</option>
-                                            <option value="callao">Callao (Prov. Constitucional)</option>
-                                            <option value="cusco">Cusco</option>
-                                            <option value="huancavelica">Huancavelica</option>
-                                            <option value="huanuco">Huánuco</option>
-                                            <option value="ica">Ica</option>
-                                            <option value="junin">Junín</option>
-                                            <option value="la-libertad">La Libertad</option>
-                                            <option value="lambayeque">Lambayeque</option>
-                                            <option value="lima">Lima</option>
-                                            <option value="loreto">Loreto</option>
-                                            <option value="madre-de-dios">Madre de Dios</option>
-                                            <option value="moquegua">Moquegua</option>
-                                            <option value="pasco">Pasco</option>
-                                            <option value="piura">Piura</option>
-                                            <option value="puno">Puno</option>
-                                            <option value="san-martin">San Martín</option>
-                                            <option value="tacna">Tacna</option>
-                                            <option value="tumbes">Tumbes</option>
-                                            <option value="ucayali">Ucayali</option>
-                                        </select>
-                                    </li>
-                                    <li>
-                                        <label for="provincia">Provincia - Distrito <span
-                                                style="color: red;">*</span></label>
-                                        <input class="input-data" type="text" id="provincia" name="provincia"
-                                            placeholder="Ej: Lima - Miraflores" required>
-                                    </li>
-
-                                    <li>
-                                        <label for="referencia">Ubicación Escrita y Referencia del Lugar <span
-                                                style="color: red;">*</span></label>
-                                        <input class="input-data" type="text" id="referencia" name="referencia"
-                                            placeholder="Ej: Calle las Dalias N 120, Chorrillos" required>
-                                    </li>
-                                </ul>
-
+                                <div class="data-client-info">
+                                    <label for="name">Nombre Y Apellido <span>*</span></label>
+                                    <input class="input-data" type="text" id="name" name="name"
+                                        aria-describedby="nombre-error" placeholder="Ej: Luis Jose" required>
+                                    <p id="nombre-error" class="error-message">Este campo es obligatorio</p>
+                                </div>
+                                <div class="data-client-info">
+                                    <label for="dni">DNI <span>*</span></label>
+                                    <input class="input-data" type="text" id="dni" name="dni"
+                                        aria-describedby="dni-error" placeholder="Ej: 78455698" required>
+                                    <p id="dni-error" class="error-message">Este campo es obligatorio</p>
+                                </div>
+                                <div class="data-client-info">
+                                    <label for="telefono">WhatsApp <span>*</span></label>
+                                    <input class="input-data" type="text" id="telefono" name="telefono"
+                                        aria-describedby="telefono-error" placeholder="+51 987259485" required>
+                                    <p id="telefono-error" class="error-message">Este campo es obligatorio</p>
+                                </div>
+                                <div class="data-client-info">
+                                    <label for="departamento">Departamento <span>*</span></label>
+                                    <select class="input-data" id="departamento" name="departamento"
+                                        aria-describedby="departamento-error" required>
+                                        <option value="" disabled selected>Ej: Tumbes</option>
+                                        <option value="amazonas">Amazonas</option>
+                                        <option value="ancash">Áncash</option>
+                                        <option value="apurimac">Apurímac</option>
+                                        <option value="arequipa">Arequipa</option>
+                                        <option value="ayacucho">Ayacucho</option>
+                                        <option value="cajamarca">Cajamarca</option>
+                                        <option value="callao">Callao (Prov. Constitucional)</option>
+                                        <option value="cusco">Cusco</option>
+                                        <option value="huancavelica">Huancavelica</option>
+                                        <option value="huanuco">Huánuco</option>
+                                        <option value="ica">Ica</option>
+                                        <option value="junin">Junín</option>
+                                        <option value="la-libertad">La Libertad</option>
+                                        <option value="lambayeque">Lambayeque</option>
+                                        <option value="lima">Lima</option>
+                                        <option value="loreto">Loreto</option>
+                                        <option value="madre-de-dios">Madre de Dios</option>
+                                        <option value="moquegua">Moquegua</option>
+                                        <option value="pasco">Pasco</option>
+                                        <option value="piura">Piura</option>
+                                        <option value="puno">Puno</option>
+                                        <option value="san-martin">San Martín</option>
+                                        <option value="tacna">Tacna</option>
+                                        <option value="tumbes">Tumbes</option>
+                                        <option value="ucayali">Ucayali</option>
+                                    </select>
+                                    <p id="departamento-error" class="error-message">Este campo es obligatorio</p>
+                                </div>
+                                <div class="data-client-info">
+                                    <label for="provincia">Provincia - Distrito <span>*</span></label>
+                                    <input class="input-data" type="text" id="provincia" name="provincia"
+                                        aria-describedby="provincia-error" placeholder="Ej: Lima - Miraflores" required>
+                                    <p id="provincia-error" class="error-message">Este campo es obligatorio</p>
+                                </div>
+                                <div class="data-client-info">
+                                    <label for="referencia">Ubicación Escrita y Referencia del Lugar
+                                        <span>*</span></label>
+                                    <input class="input-data" type="text" id="referencia" name="referencia"
+                                        aria-describedby="referencia-error"
+                                        placeholder="Ej: Calle las Dalias N 120, Chorrillos" required>
+                                    <p id="referencia-error" class="error-message">Este campo es obligatorio</p>
+                                </div>
                             </div>
                             <div class="terms">
-                                <input type="checkbox" name="terms" id="terms">
-                                <label for="terms">Me comprometo a recibir mi pedido <span
-                                        style="color: red;">*</span></label>
+                                <input type="checkbox" name="terms" id="terms" aria-describedby="terms-error">
+                                <label for="terms">Me comprometo a recibir mi pedido <span>*</span></label>
+                                <p id="terms-error" class="error-message">Este campo es obligatorio</p>
                             </div>
                             <div class="producto-extra">
                                 <button class="producto-extra" type="button">
