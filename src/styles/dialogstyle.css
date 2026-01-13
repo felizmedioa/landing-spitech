@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+section {
+    border: none;
+    width: 100%;
+    height: 100%;
+    pad: 1rem;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.header-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+.title-forms {
+    /* Fuente: Sans-serif geométrica y limpia (Arial/Helvetica son las más cercanas por defecto) */
+    font-family: 'Public Sans', sans-serif;
+
+    font-size: 1.2rem;
+
+    /* Peso: Es claramente negrita */
+    font-weight: 700;
+
+    /* Color: Un naranja vibrante (Hex aproximado) */
+    color: rgb(255, 121, 31);
+
+    /* Transformación: Todo en mayúsculas */
+    text-transform: uppercase;
+
+    /* Espaciado: Un ligero aire entre letras mejora la lectura en mayúsculas */
+    letter-spacing: 0.5px;
+}
+
+#btn-close-forms {
+    /* 1. Quitar los estilos de botón por defecto */
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    cursor: pointer;
+    /* Para que aparezca la manito al pasar el mouse */
+
+    color: #777777;
+
+}
+
+.hr-1 {
+    border: 0;
+    /* 1. Quita el borde 3D por defecto */
+    height: 1px;
+    /* 2. Define el grosor de la línea */
+    background-color: #ddd;
+    /* 3. El color de la línea (gris claro) */
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+
+.hr-2 {
+    border: 0;
+    /* 1. Quita el borde 3D por defecto */
+    height: 1px;
+    /* 2. Define el grosor de la línea */
+    background-color: #ddd;
+    /* 3. El color de la línea (gris claro) */
+    margin: 1rem;
+    /* 4. Espacio arriba y abajo para que no pegue con el texto */
+}
+
+.item-options {
+    display: block;
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+.btn-item {
+    border: 3px solid rgb(251, 146, 60);
+    border-radius: 8px;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.btn-item label {
+    display: flex;
+    /*Realizar un responsive*/
+    cursor: pointer;
+    font-family: 'Public Sans', sans-serif;
+    padding: 0px;
+}
+
+.item-options-info {
+    flex: 1;
+    margin: none;
+}
+
+.item-options-info p {
+    margin: 0;
+}
+
+.item-options-info .price {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.2em;
+    margin: 0.8rem 0rem 0.7rem 0rem;
+}
+
+.item-options-price-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.item-options-info .item-options-check {
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    flex: 1 1 0%;
+    align-items: center;
+    overflow: visible;
+    justify-content: space-between;
+    text-align: start;
+}
+
+.ahorro,
+.animated-box {
+    display: inline;
+    background-color: rgb(251, 146, 60);
+    color: white;
+    padding: 6px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 4px;
+}
+
+.btn-item input[type="radio"]:checked {
+    background-color: transparent;
+    border: 6px solid rgb(251, 146, 60);
+}
+
+.btn-item input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    padding: 0px;
+    border-radius: 50%;
+    border: 1px solid rgb(251, 146, 60);
+    background-color: transparent;
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+
+.img-product {
+    width: 64px;
+    height: 64px;
+    margin: 1rem 0.6rem 1rem 0rem;
+}
+
+/*Botón 2*/
+
+.item-options-price-2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0.6rem;
+}
+
+
+
+.price-discard {
+    color: rgb(119, 125, 138);
+    text-decoration: line-through !important;
+}
+
+.ahorro-ofert {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+/*Caja Negra*/
+.ahorro-ofert .animated-box {
+    background-color: black;
+}
+
+/*Sección Calculo de precios*/
+
+.cost {
+    padding: 16px 24px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: color-mix(in xyz-d65, rgb(250, 250, 250) 85%, black);
+    border: 2px solid rgb(253, 253, 253);
+    color: rgba(7, 18, 42, 0.62);
+    width: 75%;
+}
+
+.cost p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.pre-cost {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.precios {
+    font-weight: 400;
+    color: rgb(27, 33, 40);
+    font-size: 1.1em;
+}
+
+.total-cost .hr-2 {
+    height: 1.5px;
+}
+
+.total-cost p {
+    color: rgba(7, 18, 42, 0.62);
+    font-weight: 600;
+}
+
+.total-cost #total {
+    color: rgb(27, 33, 40);
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+/*Sección Elección de Envío*/
+
+.method-envio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0rem 1rem 0rem 1rem;
+    gap: 0.5rem;
+}
+
+/*Encabezado*/
+
+.method-envio h3 {
+    font-size: 16px;
+    opacity: 0.75;
+    font-weight: 500;
+}
+
+/*Botones de envio*/
+
+.btn-envio {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.btn-envio label {
+    width: 100%;
+}
