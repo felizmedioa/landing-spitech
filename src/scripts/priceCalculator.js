@@ -64,7 +64,7 @@ export class priceCalculator {
             lineDiscount.style.display = "flex";
         }
         this.showSubPrice.textContent = formatPrice(this.subPrice);
-        this.showDiscountPrice.textContent = formatPrice(this.discountPrice);
+        this.showDiscountPrice.textContent = `- ${formatPrice(this.discountPrice)}`;
         this.updateTotal();
     }
 
@@ -94,7 +94,7 @@ export class priceCalculator {
 
     updateTotal() {
         const total = this.subPrice + this.shippingPrice + this.cubePrice - this.discountPrice;
-        this.showTotalPrice.textContent = total.toFixed(2);
+        this.showTotalPrice.textContent = formatPrice(total);
     }
 
 }
