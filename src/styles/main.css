@@ -60,18 +60,20 @@ body {
     }
 }
 
+body {
+    color: black
+}
+
 
 dialog {
     font-family: 'Roboto', sans-serif;
-    width: 28rem;
-    min-width: 300px;
+    width: 100%;
+    max-width: 350px;
     height: 90%;
     padding: 0px;
     /* Firefox, oculta la barra de desplazamiento */
     scrollbar-width: none;
-
     margin: auto;
-
     border: none;
     border-radius: 0.9rem;
 }
@@ -93,4 +95,8 @@ body:has(dialog[open]) {
 #promo-cubo,
 #promo-cantidad {
     display: none;
+}
+
+#form-buy {
+    padding-bottom: 0.9rem;
 }
