@@ -1,22 +1,17 @@
 export class priceCalculator {
-    constructor(IdSelector, IdTotalPrice, IdSubPrice, IdShpngPrice, IdImpuestosPrice, IdDctPrice = null, IdCubo = null, IdCuboPrice = null) {
+    constructor(IdSelector, IdTotalPrice, IdSubPrice, IdShpngPrice, IdDctPrice = null, IdCubo = null, IdCuboPrice = null) {
         this.selector = document.getElementById(IdSelector);
         this.showTotalPrice = document.getElementById(IdTotalPrice);
         this.showSubPrice = document.getElementById(IdSubPrice);
         this.showShippingPrice = document.getElementById(IdShpngPrice);
-        this.showImpuestosPrice = document.getElementById(IdImpuestosPrice);
 
         this.showDiscountPrice = IdDctPrice ? document.getElementById(IdDctPrice) : null;
         this.showCubePrice = IdCuboPrice ? document.getElementById(IdCuboPrice) : null;
 
         this.cubeInput = IdCubo ? document.getElementById(IdCubo) : null;
 
-        this.initCalculator();
-
-
         this.subPrice = 129.00;
         this.shippingPrice = 0;
-        this.impuestosPrice = 19.68;
         this.cubePrice = 0;
         this.discountPrice = 0;
 
