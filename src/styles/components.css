@@ -67,70 +67,44 @@
 }
 
 .btn-comprar,
-.btn-submit {
+.btn-submit,
+.animated-box {
     will-change: transform;
-    animation: vaiven 3s infinite ease-in-out;
+    animation: vaiven 2.86s infinite cubic-bezier(.35, .06, .2, .98);
 }
 
 @keyframes vaiven {
-
-    /* --- FASE DE MOVIMIENTO (Ocupa el primer 15% del tiempo) --- */
     0% {
-        transform: rotate(0deg);
+        transform: scaleX(1);
     }
 
-    3% {
-        transform: rotate(-3deg);
-    }
-
-    /* Izquierda */
+    3%,
     6% {
-        transform: rotate(3deg);
+        transform: scale3d(.97, .97, .97) rotate(-1deg);
     }
 
-    /* Derecha */
-    9% {
-        transform: rotate(-3deg);
-    }
-
-    /* Izquierda */
-    12% {
-        transform: rotate(3deg);
-    }
-
-    /* Derecha */
-    15% {
-        transform: rotate(-3deg);
-    }
-
-    18% {
-        transform: rotate(3deg);
-    }
-
-    /* Izquierda */
-    21% {
-        transform: rotate(-3deg);
-    }
-
-    /* Derecha */
-    24% {
-        transform: rotate(3deg);
-    }
-
-    /* Izquierda */
+    9%,
+    15%,
+    21%,
     27% {
-        transform: rotate(-3deg);
+        transform: scale3d(1.03, 1.03, 1.03) rotate(1deg);
     }
 
-    /* Derecha */
+    12%,
+    18%,
+    24% {
+        transform: scale3d(1.03, 1.03, 1.03) rotate(-1deg);
+    }
+
     30% {
-        transform: rotate(0deg);
+        transform: scaleX(1);
     }
 
-    /* Vuelve al centro */
-
-    /* --- FASE DE ESPERA (Del 15% al 100% no hace NADA) --- */
     100% {
-        transform: rotate(0deg);
+        transform: scaleX(1);
     }
+}
+
+video {
+    pointer-events: none;
 }

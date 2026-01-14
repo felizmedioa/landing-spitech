@@ -278,6 +278,10 @@ section {
     color: black;
 }
 
+.btn-envio:has(input[type="radio"]:checked) {
+    border-color: rgb(202, 68, 30);
+}
+
 .btn-envio label {
     font-family: 'Public Sans', sans-serif;
     width: 100%;

@@ -16,6 +16,10 @@ body {
     background-color: gray;
 }
 
+body:has(dialog[open]) *:not(dialog):not(dialog *) {
+    animation: none;
+}
+
 /* Hero - Anuncio publicitario con scroll infinito */
 .hero {
     background-color: #f7c41e;
