@@ -22,8 +22,8 @@ body {
     height: 4rem;
     overflow: hidden;
     position: relative;
-    font-family: 'Impact';
-    font-weight: 600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
     padding-bottom: 0.2rem;
 }
 

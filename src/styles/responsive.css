@@ -16,3 +16,31 @@
  * - Ocultar/mostrar elementos
  * - Navegación móvil (hamburger menu)
  */
+
+@media (max-width: 768px) {
+
+    /* Hero - Reducir tamaños para tablet y móvil */
+    .hero {
+        height: 2.5rem;
+        /* Reducido desde 4rem */
+    }
+
+    .hero__content {
+        font-size: 1rem;
+        font-weight: 800;
+        /* Ajustable según tus pruebas */
+        gap: 1rem;
+        /* Reducido desde 2rem */
+        padding: 0 1rem;
+        /* Reducido desde 0 2rem */
+        height: 3rem;
+        /* Reducido desde 4.5rem */
+    }
+
+    .punto {
+        width: 1rem;
+        /* Reducido desde 1.5rem */
+        height: 1rem;
+        /* Reducido desde 1.5rem */
+    }
+}

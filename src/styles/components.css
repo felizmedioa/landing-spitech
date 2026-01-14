@@ -65,3 +65,72 @@
 .btn-comprar-text-sub {
     color: rgba(255, 255, 255, 0.85);
 }
+
+.btn-comprar,
+.btn-submit {
+    will-change: transform;
+    animation: vaiven 3s infinite ease-in-out;
+}
+
+@keyframes vaiven {
+
+    /* --- FASE DE MOVIMIENTO (Ocupa el primer 15% del tiempo) --- */
+    0% {
+        transform: rotate(0deg);
+    }
+
+    3% {
+        transform: rotate(-3deg);
+    }
+
+    /* Izquierda */
+    6% {
+        transform: rotate(3deg);
+    }
+
+    /* Derecha */
+    9% {
+        transform: rotate(-3deg);
+    }
+
+    /* Izquierda */
+    12% {
+        transform: rotate(3deg);
+    }
+
+    /* Derecha */
+    15% {
+        transform: rotate(-3deg);
+    }
+
+    18% {
+        transform: rotate(3deg);
+    }
+
+    /* Izquierda */
+    21% {
+        transform: rotate(-3deg);
+    }
+
+    /* Derecha */
+    24% {
+        transform: rotate(3deg);
+    }
+
+    /* Izquierda */
+    27% {
+        transform: rotate(-3deg);
+    }
+
+    /* Derecha */
+    30% {
+        transform: rotate(0deg);
+    }
+
+    /* Vuelve al centro */
+
+    /* --- FASE DE ESPERA (Del 15% al 100% no hace NADA) --- */
+    100% {
+        transform: rotate(0deg);
+    }
+}
