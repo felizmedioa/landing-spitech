@@ -8,6 +8,14 @@ section {
     font-family: 'Public Sans', sans-serif;
 }
 
+dialog section {
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 0.9rem;
+    margin: 5% 1rem;
+}
+
 .header-form {
     display: flex;
     justify-content: space-between;
@@ -34,12 +42,13 @@ section {
     letter-spacing: 0.5px;
 }
 
-#btn-close-forms {
+#btn-close-forms,
+#btn-close-thanks {
     /* 1. Quitar los estilos de botón por defecto */
+    padding: 0;
     background: transparent;
     border: none;
     box-shadow: none;
-    padding: 0;
     cursor: pointer;
     /* Para que aparezca la manito al pasar el mouse */
 
@@ -442,13 +451,13 @@ section {
 
 
     background-image:
-        linear-gradient(90deg, red 50%, transparent 50%),
+        linear-gradient(90deg, rgb(101, 58, 180) 50%, transparent 50%),
         /* Arriba */
-        linear-gradient(90deg, red 50%, transparent 50%),
+        linear-gradient(90deg, rgb(101, 58, 180) 50%, transparent 50%),
         /* Abajo */
-        linear-gradient(0deg, red 50%, transparent 50%),
+        linear-gradient(0deg, rgb(101, 58, 180) 50%, transparent 50%),
         /* Izquierda */
-        linear-gradient(0deg, red 50%, transparent 50%);
+        linear-gradient(0deg, rgb(101, 58, 180) 50%, transparent 50%);
     /* Derecha */
 
     /* 2. Tamaño de los guiones (ancho x alto) */
@@ -507,6 +516,23 @@ section {
     margin: auto;
 }
 
+/*Warning*/
+
+.message-warn {
+    margin: 1rem;
+    margin-bottom: 1rem;
+}
+
+.message-warn p {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
 /*Botón de comprar*/
 
 .submit {
@@ -528,11 +554,13 @@ section {
     color: white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-size: 1rem;
 }
 
 .btn-submit-content svg {
-    width: 20%;
+    margin: 0;
+    width: auto;
     height: 32px;
 }
 
@@ -542,8 +570,10 @@ section {
 
 .btn-submit-content span {
     font-family: 'Public Sans', sans-serif;
+    flex: 1;
     display: flex;
     flex-direction: column;
+    text-align: center;
     gap: 0.5rem;
 }
 
@@ -558,4 +588,33 @@ section {
     font-size: 0.9rem;
     font-weight: 400;
     line-height: 1.5;
+}
+
+
+/*Modal Agradecimiento*/
+
+#thanks-compra section {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40% auto;
+}
+
+#btn-close-thanks {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-thanks {
+    margin: auto;
+    width: 90%;
+    max-width: 20rem;
+    height: auto;
+    pointer-events: none;
 }

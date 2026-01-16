@@ -232,11 +232,7 @@
                                     <p id="referencia-error" class="error-message">Este campo es obligatorio</p>
                                 </div>
                             </div>
-                            <div class="terms">
-                                <input type="checkbox" name="terms" id="terms" aria-describedby="terms-error">
-                                <label for="terms">Me comprometo a recibir mi pedido</label>
-                                <p id="terms-error" class="error-message">Este campo es obligatorio</p>
-                            </div>
+
                             <div class="extras">
                                 <button class="btn-producto-extra" type="button">
                                     <input type="checkbox" name="producto-extra" id="producto-extra-cubo">
@@ -253,6 +249,19 @@
                                     </label>
                                 </button>
                             </div>
+
+                            <div class="message-warn">
+                                <p>Por favor, solicita tu pedido solo si tienes la seguridad de recibirlo. Las
+                                    cancelaciones perjudican nuestra logística y el servicio hacia otros clientes.
+                                    Valoramos tu compromiso.</p>
+                            </div>
+
+                            <div class="terms">
+                                <input type="checkbox" name="terms" id="terms" aria-describedby="terms-error">
+                                <label for="terms">Me comprometo a recibir mi pedido</label>
+                                <p id="terms-error" class="error-message">Este campo es obligatorio</p>
+                            </div>
+
                             <div class="submit">
                                 <button id="btn-submit" class="btn-submit" type="submit">
                                     <div class="btn-submit-content">
@@ -266,18 +275,21 @@
                                             <p class="submit-title">COMPLETA TU COMPRA</p>
                                             <p class="submit-info">¡ OFERTA POR TIEMPO LIMITADO !</p>
                                         </span>
-                                        <div style="width:19%;">&nbsp;</div>
+
                                     </div>
                                 </button>
                             </div>
                     </main>
                     </form>
-                    <footer>
-
-                    </footer>
                 </section>
             </dialog>
-
+            <dialog id="thanks-compra">
+                <section>
+                    <button type="button" id="btn-close-thanks">
+                        <img class="img-thanks" src="./src/assets/images/good-buy.png" alt="Muchas Gracias" />
+                    </button>
+                </section>
+            </dialog>
 
 
             <img class="img-back" src="./src/assets/images/pro-2.jpg" alt="pro-2">
@@ -295,6 +307,7 @@
     </main>
 
     <button class="btn-comprar" id="btn-open-forms">
+
         <div class="btn-comprar-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                 <path
