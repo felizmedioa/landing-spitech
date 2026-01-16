@@ -92,6 +92,7 @@ dialog section {
     background-color: rgb(255, 255, 255);
     cursor: pointer;
     color: black;
+    box-sizing: border-box;
 }
 
 .btn-item:has(input[type="radio"]:checked) {
@@ -100,16 +101,18 @@ dialog section {
 
 .btn-item label {
     display: flex;
-    /*Realizar un responsive*/
     cursor: pointer;
     font-family: 'Public Sans', sans-serif;
     padding: 0px;
     height: auto;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .item-options-info {
     flex: 1;
     margin: none;
+    min-width: 0;
 }
 
 .item-options-info p {
@@ -173,12 +176,16 @@ dialog section {
     cursor: pointer;
     display: block;
     position: relative;
+    flex-shrink: 0;
 }
 
 .img-product {
-    min-width: 64px;
+    min-width: 3rem;
+    max-width: 4rem;
+    width: 100%;
     height: 3rem;
-    margin: auto 1rem;
+    margin: auto 0.5rem;
+    object-fit: contain;
 }
 
 /*Botón 2*/
@@ -187,7 +194,8 @@ dialog section {
     display: flex;
     align-items: center;
     justify-content: left;
-    gap: 0.6rem;
+    gap: 0.4rem;
+    flex-wrap: wrap;
 }
 
 
@@ -200,7 +208,8 @@ dialog section {
 .ahorro-ofert {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.3rem;
+    flex-wrap: wrap;
 }
 
 
