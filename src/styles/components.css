@@ -110,3 +110,57 @@
 video {
     pointer-events: none;
 }
+
+.hook-buy {
+    font-family: 'Public Sans', sans-serif;
+    width: 85%;
+    max-width: 450px;
+
+    position: fixed;
+    top: 4rem;
+    /*left: 52.5%;*/
+    transform: translateX(200%);
+
+    right: 1rem;
+
+    transition: transform 1s ease;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    padding: 0.5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 4rem;
+    text-align: justify;
+}
+
+.hook-buy.active {
+    transform: translateX(0%);
+}
+
+.btn-close-notification {
+    min-width: 1rem;
+}
+
+.btn-close-notification svg {
+    width: 2px;
+}
+
+.bold-noti {
+    color: red;
+}
+
+.hook-buy div p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hook-buy img {
+    border-radius: 0%;
+    width: 3rem;
+    height: 3rem;
+}

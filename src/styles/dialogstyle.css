@@ -27,13 +27,13 @@ dialog section {
     /* Fuente: Sans-serif geométrica y limpia (Arial/Helvetica son las más cercanas por defecto) */
     font-family: 'Public Sans', sans-serif;
 
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     /* Peso: Es claramente negrita */
     font-weight: 700;
 
     /* Color: Un naranja vibrante (Hex aproximado) */
-    color: rgb(255, 121, 31);
+    color: rgb(255, 31, 31);
 
     /* Transformación: Todo en mayúsculas */
     text-transform: uppercase;
@@ -43,7 +43,8 @@ dialog section {
 }
 
 #btn-close-forms,
-#btn-close-thanks {
+#btn-close-thanks,
+#btn-close-notification {
     /* 1. Quitar los estilos de botón por defecto */
     padding: 0;
     background: transparent;
@@ -536,7 +537,7 @@ dialog section {
     color: red;
     font-size: 1.2rem;
     font-weight: bold;
-    text-align: justify;
+    text-align: left;
     font-family: 'Courier New', Courier, monospace;
 }
 

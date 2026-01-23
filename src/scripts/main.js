@@ -22,10 +22,13 @@
 import { modals } from "./components.js";
 import { priceCalculator } from "./priceCalculator.js";
 import { ModalThanks } from "./modalThanks.js";
+import { notify } from "./notify.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const modalFormsBuy = new modals("dialog-compra", "btn-open-forms", "btn-close-forms");
     const formsPriceBuy = new priceCalculator("dialog-compra", "total", "subtotal", "envio", "descuento-cantidad", "producto-extra-cubo", "descuento-cubo");
+
+    const notifyHook = new notify("hook-buy", "btn-close-notification", 10);
 
     const UrlSheets = "https://script.google.com/macros/s/AKfycbxlWFv-1c72MCmnjQX_wIdZjFOccoArW9cUpN1DaJ383CCBw-S2Xj055exEYkvHiH3M/exec";
 
