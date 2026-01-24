@@ -17,6 +17,15 @@
  * - Navegación móvil (hamburger menu)
  */
 
+/* Tablet y Desktop - Limita el ancho del modal */
+@media (min-width: 768px) {
+    #dialog-compra section {
+        max-width: 475px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media (max-width: 768px) {
 
 

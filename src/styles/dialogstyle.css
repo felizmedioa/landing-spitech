@@ -600,6 +600,63 @@ dialog section {
     line-height: 1.5;
 }
 
+/*Comentarios*/
+
+.user-comments {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-comments img {
+    position: absolute;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.user-comments img:nth-child(1) {
+    animation: carousel 16s infinite;
+}
+
+.user-comments img:nth-child(2) {
+    animation: carousel 16s 4s infinite;
+}
+
+.user-comments img:nth-child(3) {
+    animation: carousel 16s 8s infinite;
+}
+
+.user-comments img:nth-child(4) {
+    animation: carousel 16s 12s infinite;
+}
+
+@keyframes carousel {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    5%,
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+}
 
 /*Modal Agradecimiento*/
 

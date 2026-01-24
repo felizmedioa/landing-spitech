@@ -5,34 +5,34 @@ Landing page moderna construida con HTML, CSS y JavaScript vanilla.
 ## 📁 Estructura del Proyecto
 
 ```
-spitech-landing/
-├── public/              # Archivos públicos
-│   └── index.html      # Página principal
-├── src/
-│   ├── styles/         # Estilos CSS
-│   │   ├── reset.css
-│   │   ├── variables.css
-│   │   ├── main.css
-│   │   ├── components.css
-│   │   └── responsive.css
-│   ├── scripts/        # JavaScript
-│   │   ├── utils.js
-│   │   ├── components.js
-│   │   ├── priceCalculator.js
-│   │   └── main.js
-│   ├── assets/         # Recursos estáticos
-│   │   ├── images/
-│   │   ├── fonts/
-│   │   └── icons/
-│   └── components/     # Componentes HTML (futuro)
-├── config/             # Configuración
-└── package.json
+landing-spitech/
+├── index.html          # Página principal
+├── package.json        # Configuración del proyecto
+├── DEPLOYMENT.md       # Guía de despliegue
+├── .gitignore          # Archivos ignorados por Git
+└── src/
+    ├── styles/         # Estilos CSS
+    │   ├── reset.css
+    │   ├── main.css
+    │   ├── components.css
+    │   ├── dialogstyle.css
+    │   └── responsive.css
+    ├── scripts/        # JavaScript
+    │   ├── utils.js
+    │   ├── components.js
+    │   ├── priceCalculator.js
+    │   ├── modalThanks.js
+    │   ├── notify.js
+    │   └── main.js
+    └── assets/         # Recursos estáticos
+        ├── images/
+        └── icons/
 ```
 
 ## 🚀 Cómo empezar
 
 1. Clona el repositorio
-2. Abre `public/index.html` directamente en tu navegador
+2. Abre `index.html` directamente en tu navegador
 3. O utiliza Live Server / cualquier servidor local para mejor experiencia de desarrollo
 
 ## 🔧 Configuración
@@ -48,26 +48,16 @@ Si deseas usar variables de entorno para la URL de Google Apps Script:
 
 ## 📦 Deployment
 
+Para instrucciones detalladas de deployment, consulta el archivo [`DEPLOYMENT.md`](DEPLOYMENT.md).
+
 Este proyecto está listo para deployment en cualquier servicio de hosting estático:
 
-### Netlify
-1. Conecta tu repositorio
-2. Build command: `(deja en blanco)`
-3. Publish directory: `public`
-
-### Vercel
-1. Importa tu repositorio
-2. Framework Preset: `Other`
-3. Root Directory: `public`
-
-### GitHub Pages
-1. Ve a Settings → Pages
-2. Source: Deploy from a branch
-3. Branch: `main` → carpeta `/public`
+### Netlify / Vercel / GitHub Pages
+El archivo `index.html` está en la raíz del proyecto, lo que facilita el deployment. Simplemente apunta a la raíz del repositorio.
 
 ### Render / Railway / Cloudflare Pages
 - Todos soportan HTML estático
-- Solo apunta a la carpeta `public/`
+- Root directory: `/` (raíz del proyecto)
 
 ## ⚙️ Configuración de Google Apps Script
 
